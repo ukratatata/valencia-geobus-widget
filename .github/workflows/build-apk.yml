@@ -24,8 +24,9 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Accept Android SDK Licenses
+        run: |
+          yes | sdkmanager --licenses || true
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -48,14 +49,14 @@ jobs:
           name: València GeoBus Widget v1.0.0 (One UI 8.5)
           body: |
             ### 🚌 València GeoBus Widget v1.0.0
-            Compilación automática lista para instalar en tu **Samsung Galaxy S24 Ultra** (Android 16, One UI 8.5).
+            Compilación directa y lista para instalar en tu **Samsung Galaxy S24 Ultra** (Android 16, One UI 8.5).
             
-            #### 📥 Instalación:
-            1. Descarga el archivo `app-debug.apk` adjunto directamente desde tu móvil.
-            2. Pulsa en el archivo descargado para instalarlo.
-            3. Si Samsung / Play Protect muestra un aviso de *"App de origen desconocido"* o *"Desarrollador desconocido"*, pulsa **"Instalar de todas formas"** (es completamente seguro, tu código es 100% abierto y auditable).
-            4. Abre la app, pulsa en Ajustes y concede **"Permitir todo el tiempo"** en Ubicación.
-            5. Añade el widget a tu pantalla de inicio y ¡listo!
+            #### 📥 Instrucciones de Instalación:
+            1. Descarga el archivo `app-debug.apk` adjunto directamente a tu teléfono móvil.
+            2. Toca la notificación o abre el archivo desde la app "Mis Archivos" de Samsung.
+            3. Si el sistema te pide confirmación por ser de origen desconocido, pulsa **"Instalar de todas formas"** (la app es 100% segura, de código abierto e inviolable).
+            4. Abre la app, pulsa en Ajustes y concede **"Permitir todo el tiempo"** para que el widget pueda leer el GPS desde la pantalla de inicio.
+            5. Mantén pulsada la pantalla de inicio > Widgets > añade **València GeoBus**.
           files: app/build/outputs/apk/debug/app-debug.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
