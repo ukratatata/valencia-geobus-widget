@@ -92,6 +92,6 @@ dependencies {
 
     // Coroutines & WorkManager
     implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.kotlinx.coroutines.play-services)
+    implementation(libs.kotlinx.coroutines.play.services)
     implementation(libs.androidx.work.runtime.ktx)
 }
