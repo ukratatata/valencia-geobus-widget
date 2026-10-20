@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">València GeoBus</string>
+    <string name="widget_name">EMT GeoBus (One UI)</string>
+    <string name="widget_description">Próximos buses EMT Valencia según tu cercanía GPS a las paradas configuradas.</string>
+
+    <string name="emt_header_title">EMT València</string>
+    <string name="refresh">Actualizar</string>
+    <string name="refreshing">Actualizando tiempos...</string>
+    <string name="out_of_range_title">Fuera de tus paradas (>500m)</string>
+    <string name="out_of_range_desc">Pulsa actualizar al acercarte a tus paradas configuradas.</string>
+    <string name="no_stops_configured">No tienes paradas configuradas. Abre la app para añadir paradas.</string>
+    <string name="permission_required">Permiso de ubicación en segundo plano necesario para actualizar el widget.</string>
+</resources>

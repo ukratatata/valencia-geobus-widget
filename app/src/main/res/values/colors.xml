@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- One UI 8.5 & EMT Valencia Brand Palette -->
+    <color name="oneui_bg_dark">#17171A</color>
+    <color name="oneui_card_dark">#242429</color>
+    <color name="oneui_card_stroke">#33333A</color>
+    <color name="emt_red">#E30613</color>
+    <color name="emt_red_dark">#B3050F</color>
+    <color name="oneui_green_imminent">#30D158</color>
+    <color name="oneui_yellow_later">#FFD60A</color>
+    <color name="oneui_text_primary">#FFFFFF</color>
+    <color name="oneui_text_secondary">#9E9EA6</color>
+    <color name="oneui_text_tertiary">#8E8E93</color>
+</resources>
